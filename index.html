@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("bf_lang")||"en";if(l==="ar"){document.documentElement.lang="ar";document.documentElement.dir="rtl";}}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond FMCG · Brand & Product Catalog</title>
+<meta name="description" content="Browse international food and consumer brands available through Beyond FMCG in Saudi Arabia and request prices for your store.">
+<link rel="icon" href="brand/beyond-fmcg-mark-black@512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Mulish:wght@400;500;600;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/theme-beyond.css">
+</head>
+<body data-base="./">
+<header id="hdr"></header>
+
+<section class="hero">
+  <div class="hero-blob"></div>
+  <div class="wrap">
+    <div class="copy">
+      <h1 data-i18n="hero_h1">Global brands,<br>delivered to <em>Saudi shelves.</em></h1>
+      <p data-i18n="hero_p">Beyond FMCG imports and distributes leading international food and consumer brands to supermarkets, pharmacies and retailers across the Kingdom. Browse the full catalog, build your list and request prices in a few clicks.</p>
+      <div class="cta"><a class="btn btn-white" href="#catalog" data-i18n="hero_cta1">Browse the catalog</a><a class="btn btn-ghost" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.4)" href="#brands" data-i18n="hero_cta2">See our brands</a></div>
+      <div class="hero-stats">
+        <div><b id="stat-products">…</b><span data-i18n="st_products">Products</span></div>
+        <div><b id="stat-brands">…</b><span data-i18n="st_brands">Brands</span></div>
+        <div><b id="stat-cats">…</b><span data-i18n="st_cats">Categories</span></div>
+      </div>
+    </div>
+    <div class="mosaic" hidden><div class="mosaic-grid" id="mosaic"></div></div>
+    <div class="hero-art"><div class="hero-pat"></div><img src="brand/hero-girl-packs.webp" alt="" width="928" height="1152" fetchpriority="high"></div>
+  </div>
+</section>
+
+<section class="brands-sec" id="brands">
+  <div class="wrap">
+    <h2 data-i18n="brands_h2">Brands we bring to the Kingdom</h2>
+    <p data-i18n="brands_p">Pick a brand to browse its full range.</p>
+    <div class="brand-row" id="brand-row"></div>
+  </div>
+</section>
+
+<div class="promo" id="promo" hidden></div>
+<section class="catalog" id="catalog">
+  <div class="wrap">
+    <aside class="filters" id="filters" aria-label="Filters"></aside>
+    <div>
+      <h2 class="sec-h" data-i18n="window_h2">Window products</h2>
+      <div class="results-h">
+        <button class="btn btn-ghost btn-sm mob-filter" id="mob-filter" type="button"><span aria-hidden="true">≡</span> <span data-i18n="filters_btn">Filters</span></button>
+        <div class="count" id="count" data-i18n="loading">Loading products…</div>
+        <div class="sp"></div>
+        <label class="sort"><span data-i18n="sort">Sort</span> <select id="sort"></select></label>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="grid" id="grid">
+        <div class="card"><div class="ph skel" style="aspect-ratio:1"></div><div class="body"><div class="skel" style="height:14px;border-radius:6px"></div><div class="skel" style="height:14px;width:60%;border-radius:6px"></div></div></div>
+        <div class="card"><div class="ph skel" style="aspect-ratio:1"></div><div class="body"><div class="skel" style="height:14px;border-radius:6px"></div><div class="skel" style="height:14px;width:60%;border-radius:6px"></div></div></div>
+        <div class="card"><div class="ph skel" style="aspect-ratio:1"></div><div class="body"><div class="skel" style="height:14px;border-radius:6px"></div><div class="skel" style="height:14px;width:60%;border-radius:6px"></div></div></div>
+        <div class="card"><div class="ph skel" style="aspect-ratio:1"></div><div class="body"><div class="skel" style="height:14px;border-radius:6px"></div><div class="skel" style="height:14px;width:60%;border-radius:6px"></div></div></div>
+      </div>
+      <div class="more" id="more" hidden><button class="btn btn-primary" type="button" data-i18n="load_more">Load more products</button></div>
+    </div>
+  </div>
+</section>
+
+<footer id="foot"></footer>
+<script id="bf-settings" type="application/json">{"site_url": "https://malearnsa.com/beyond-fmcg/", "company_name": "Beyond FMCG", "regions": "Riyadh|Makkah (Jeddah / Makkah / Taif)|Eastern Province|Madinah|Qassim|Asir|Tabuk|Hail|Northern Borders|Jazan|Najran|Al Bahah|Al Jouf|Nationwide", "business_types": "Supermarket / Hypermarket|Convenience store|Pharmacy|Wholesaler|Distributor|HORECA / Food service|E-commerce|Other", "site_hero_h1_en": "Global brands,<br>delivered to <em>Saudi shelves.<\/em>", "site_hero_h1_ar": "علامات عالمية،<br>على رفوف <em>المتاجر السعودية.<\/em>", "site_hero_p_en": "Beyond FMCG imports and distributes leading international food and consumer brands to supermarkets, pharmacies and retailers across the Kingdom. Browse the full catalog, build your list and request prices in a few clicks.", "site_hero_p_ar": "Beyond FMCG تستورد وتوزّع أبرز العلامات الغذائية والاستهلاكية العالمية للسوبر ماركت والصيدليات ومنافذ البيع في جميع مناطق المملكة. تصفّح الكتالوج كاملًا، كوّن قائمتك واطلب الأسعار بنقرات قليلة.", "site_promo_en": "", "site_promo_ar": "", "site_promo_link": "", "site_foot_tag_en": "Your gateway to the world's leading consumer brands.", "site_foot_tag_ar": "بوابتك إلى أبرز العلامات الاستهلاكية في العالم.", "site_foot_p_en": "Beyond FMCG imports and distributes international food and consumer brands to supermarkets, hypermarkets, pharmacies and retailers across Saudi Arabia. We handle sourcing, import, compliance and delivery end to end, so you can focus on your shelves.", "site_foot_p_ar": "Beyond FMCG تستورد وتوزّع العلامات الغذائية والاستهلاكية العالمية للسوبر ماركت والهايبر ماركت والصيدليات ومنافذ البيع في المملكة العربية السعودية. نتولى التوريد والاستيراد والامتثال والتوصيل من البداية إلى النهاية لتتفرّغ لرفوفك.", "site_cities_en": "Riyadh · Jeddah · Dammam", "site_cities_ar": "الرياض · جدة · الدمام", "site_linkedin": "", "site_instagram": "", "site_facebook": "", "site_whatsapp": "", "site_email": "", "site_phone": ""}</script>
+<script src="assets/i18n.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
